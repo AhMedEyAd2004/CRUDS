@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <div class="contain0">
+        <div class="title">
+            <h1>CRUDS</h1>
+            <span>CREATE READ UPDATE DELETE SEARCH</span>
+        </div>
+        <div class="contain1">
+            <input placeholder="title" class="inpt"></input>
+            <div class="total">
+                <input type="number" placeholder="price" class="inpt" ></input>
+                <input type="number" placeholder="taxes" class="inpt"></input>
+                <input type="number" placeholder="ads" class="inpt" ></input>
+                <input type="number" placeholder="discount" class="inpt"></input>
+               
+                <div class="total-div">
+                    <span class="total-span">Total:</span>
+                <span id="tot"></span>
+             </div>
+
+            </div>
+
+            <input id="count" placeholder="count"></input>
+            <input class="inpt" placeholder="category"></input>
+            <button id="crtbtn" >Create</button>
+            <input id="search_bar" onkeyup="searching(this.value)" placeholder="search"></input>
+
+            <div class="search-btns">
+                <button onclick="searchmode(this.id)" id="searchtitle">Search By Title</button>
+                <button onclick="searchmode(this.id)" id="searchcategory">Search By Category</button>
+            </div>
+            <button id="deleter" onclick="deleteAll()">Delete All</button>
+        </div>
+    </div>
+
+    <div id="contain2">
+        <div><hr>ID<hr>
+        <div class="added">
+          
+        </div>
+        </div>
+
+        <div><hr>TITLE<hr>
+            <div class="added">
+          
+            </div>
+        </div>
+
+        <div><hr>PRICE <hr>
+            <div class="added">
+          
+            </div>
+        </div>
+
+        <div><hr>TAXES <hr>
+            <div class="added">
+          
+            </div>
+        </div>
+        <div><hr>ADS <hr>
+            <div class="added">
+          
+            </div>
+        </div>
+
+        <div><hr>DISCOUNT <hr>
+            <div class="added">
+          
+            </div>
+        </div>
+
+        <div><hr>TOTAL <hr>
+            <div class="total_div">
+          
+            </div>
+        </div>
+        
+        <div><hr>CATEGORY <hr>
+            <div class="added">
+          
+            </div>
+        </div>
+
+        <div><hr>UPDATE <hr>
+            <div id="upd" class="added">
+          
+            </div>
+        </div>
+
+        <div><hr>DELETE <hr>
+            <div id="del" class="added">
+          
+            </div>
+        </div>
+
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+*
+{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+body
+{
+    margin: auto;
+    width: 80%;
+    color: white;
+    background-color:  #212224;
+}
+input{
+    border-radius: 4px;
+    background-color: #111214;
+    outline: none;
+    color: white;
+    border: none;
+    height: 30px;
+    padding: 5px;
+    margin: 5px 6px;
+    width: 100%;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button
+/* 2l 2 by4eelo 2l 2shom mn input type=number */
+{
+    appearance: none ;
+}
+.title
+{
+    text-align: center;
+    margin: 5px;
+}
+h1
+{
+    margin-bottom: 0px;
+}
+.total
+{
+    display: flex;
+}
+button{
+    width: 100%;
+    background-color: #4f1b8f;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    height: 26px;
+    margin: 5px 0px;
+    transition: 0.5s;
+}
+.search-btns
+{
+display: flex;
+justify-content: space-between;
+}
+.search-btns button
+{
+    width: 45%;
+}
+
+.total-span
+{
+    display: inline-block;
+    background-color: rgb(195, 19, 19);
+    border-radius: 5px;
+    height: 30px;
+    padding: 4px;
+    margin: 3px 10px;
+}
+.total-div
+{
+    display: flex;
+    align-items: center;
+}
+
+hr{ opacity: 0.2;
+    margin: 5px 0px ;
+}
+
+#contain2
+{
+    display: flex;
+    gap: 3px;
+    padding-bottom: 20px;
+}
+#contain2 div{
+  text-align: center;
+  flex-basis: 80px;
+}
+#contain2 :nth-child(2)
+{
+   flex-grow: 3;
+}
+#contain2 :nth-child(8)
+{
+    flex-grow: 2;
+}
+.added
+{
+    height: fit-content;
+}
+.added div button
+{
+   font-size: 13px;
+   height: 17px;
+   margin: 0px;
+    padding: 1px;
+}
+button:hover
+ {
+     transform: scale(1.13);
+    /* 3ayz t3adel 3la 2l 7agm mn 8eer 
+    mata5od mkan 2l ba2y yb2a transform*/
+    background-color: #7749af;
+}
+input:focus
+{
+    transform: scale(1.08);
+}
+@media (max-width:900px)
+{
+    #contain2
+    {
+        overflow-x: scroll;
+    }
+}
